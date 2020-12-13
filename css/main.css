@@ -1703,7 +1703,7 @@ header .logo a {
     text-align: center;
     display: inline-block;
     padding: 0 8px 0 14px;
-    color: rgba(12, 7, 7, 0.3);
+    color: white;
 }
 
 .intro-content .intro-position span:first-child::before {
@@ -1711,7 +1711,7 @@ header .logo a {
     text-align: center;
     display: inline-block;
     padding: 0 14px 0 8px;
-    color: rgba(12, 7, 7, 0.3);
+    color: white;
 }
 
 .intro-content .button {
