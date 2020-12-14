@@ -1848,6 +1848,12 @@ header .logo a {
     padding: 50px 50px;
 }
 
+.first,
+.second,
+.third {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 #block .col-full h2 {
     color: #17A43B;
 }
@@ -1875,6 +1881,10 @@ header .logo a {
 }
 
 #block .col-eleven {
+    height: 175px;
+}
+
+#block .fourth {
     height: 175px;
 }
 
@@ -2000,6 +2010,9 @@ header .logo a {
 }
 
 @media only screen and (max-width:768px) {
+    .fourth {
+        display: none;
+    }
     .intro-info img {
         height: 7.8rem;
         width: 7.8rem;
@@ -2876,6 +2889,7 @@ header .logo a {
     padding-top: 7.2rem;
     padding-bottom: 6rem;
     text-align: center;
+    align-items: center;
 }
 
 #stats h1 {
@@ -2890,7 +2904,8 @@ header .logo a {
 #stats .row {
     display: flex;
     align-items: center;
-    max-width: 1440px;
+    /* height: 10px; */
+    max-width: 1200px;
 }
 
 #stats .stat {
@@ -2962,6 +2977,107 @@ header .logo a {
 }
 
 
+/**
+*===============================
+* values
+* -----------------------------
+*/
+
+#values {
+    background: #990047;
+    padding-top: 7.2rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+
+#values h1 {
+    color: white;
+}
+
+#values img {
+    max-width: 300px;
+    max-width: 300px;
+}
+
+#values .row {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    /* height: 10px; */
+    max-width: 1200px;
+}
+
+#values .stat {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    min-height: 17.4rem;
+}
+
+#values .stat:first-child {
+    border: none;
+}
+
+#values .icon-part i {
+    font-size: 4.8rem;
+    color: #000000;
+}
+
+#values .stat-count {
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    font-family: "poppins-medium", sans-serif;
+    color: white;
+}
+
+#values .stat-percentage {
+    color: #FFFFFF;
+    font-size: 2rem;
+    /* margin-top: 1.2rem; */
+    margin-bottom: 0;
+    font-family: "poppins-medium", sans-serif;
+    color: white;
+}
+
+#values .stat-title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/**
+  * responsive:
+  * stats
+  * -------------------------------------------------------------------
+  */
+
+@media only screen and (max-width:1024px) {
+    #values .stat:nth-child(n) {
+        border-left: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 1.5rem;
+    }
+    #values .stat:nth-child(3n+1) {
+        border: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #values .stat:nth-child(n) {
+        border-left: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    #values .stat:nth-child(2n+1) {
+        border: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #values .stat:nth-child(n) {
+        border: none;
+    }
+}
+
+
 /** 
  * ===================================================================
  * 17. contact - (_layout.scss)
@@ -3022,7 +3138,15 @@ header .logo a {
 }
 
 #contact form .form-field {
+    padding: 2px 2px;
+}
+
+#contact form .form-field input,
+#contact form .form-field textarea {
     position: relative;
+    border-radius: 30px;
+    border: 2px solid grey;
+    box-shadow: rgba(160, 160, 160, 0.144) 0px 7px 29px 0px;
 }
 
 #contact form .form-field:before,
@@ -3081,7 +3205,8 @@ header .logo a {
 
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
-#contact input[type="email"]:focus {
+#contact input[type="email"]:focus,
+#contact textarea:focus {
     border-color: #FF0077;
     color: black;
 }
@@ -3093,7 +3218,7 @@ header .logo a {
 
 #contact textarea:focus {
     border-color: #FF0077;
-    color: black;
+    /* color: black; */
 }
 
 #contact button.submitform {
@@ -3194,6 +3319,10 @@ header .logo a {
 }
 
 .contact-info a:hover {
+    color: #FF0077;
+}
+
+.contact-info a p:hover {
     color: #FF0077;
 }
 

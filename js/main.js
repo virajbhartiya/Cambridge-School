@@ -70,7 +70,7 @@
 	/*----------------------------------------------------- */
 	/* Stat Counter
   	------------------------------------------------------- */
-	var statSection = $("#stats"),
+	var statSection = $("#values"),
 		stats = $(".stat-count");
 
 	statSection.waypoint({
